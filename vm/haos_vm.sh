@@ -228,7 +228,7 @@ msg_info "Getting URL for Home Assistant ${BRANCH} Disk Image"
 if [ "$BRANCH" == "$DEV" ]; then 
 URL=https://os-builds.home-assistant.io/${BRANCH}/haos_ova-${BRANCH}.qcow2.xz
 else
-URL=https://github.com/home-assistant/operating-system/releases/download/${BRANCH}/haos_ova-${BRANCH}.qcow2.xz
+URL=https://github.com/home-assistant/operating-system/releases/download/${BRANCH}/haos_ova-${BRANCH}.image.xz
 fi
 sleep 2
 msg_ok "${CL}${BL}${URL}${CL}"
